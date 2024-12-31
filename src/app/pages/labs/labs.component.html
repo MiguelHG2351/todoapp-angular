@@ -1,0 +1,23 @@
+<h1>Mi primer proyecto</h1>
+
+<hr/>
+
+<h2>{{ 'Hola'.repeat(4) }}</h2>
+
+<p>La suma de 3 + 3 es: {{ 3+3 }}</p>
+
+<hr>
+
+<p>(change)</p>
+<input type="number" [value]="person.edad" (change)="$event">
+
+<p>(keyup)</p>
+<input type="text" [value]="name()" (keyup)="keyupHandler($event)">
+
+<p>(keyup with shift + t)</p>
+<input type="text" [value]="person.nombre" (keyup.shift.t)="clickHandler()">
+
+<p>Signals</p>
+
+<p>{{ name() }}</p>
+
